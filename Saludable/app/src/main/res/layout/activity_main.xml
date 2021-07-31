@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_trago"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/trago_iv_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/trago_tv_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/trago_tv_categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Categoria"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn_beber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beber" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_comida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/m_tv_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/carter_one"
+                    android:text="Usuario: "
+                    android:textAlignment="textEnd"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/m_tv_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/carter_one"
+                    android:text="value"
+                    android:textAlignment="textEnd"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/m_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/carter_one"
+                android:text="Completar"
+                android:textAlignment="center"
+                android:textColor="@color/verde_2"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/carter_one"
+                android:text="Tipo de Comida"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_tipoComida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_desayuno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Desayuno" />
+
+                <RadioButton
+                    android:id="@+id/rb_almuerzo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Almuerzo" />
+
+                <RadioButton
+                    android:id="@+id/rb_merienda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Merienda" />
+
+                <RadioButton
+                    android:id="@+id/rb_cena"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Cena" />
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Comida Principal"
+                app:startIconContentDescription="Icono lineas"
+                app:startIconDrawable="@drawable/ic_food">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/m_et_comidaPrincipal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Comida Secundaria"
+                app:startIconContentDescription="Icono lineas"
+                app:startIconDrawable="@drawable/ic_fastfood">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/m_et_comidaSecundaria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Bebida"
+                android:visibility="visible"
+                app:startIconContentDescription="Icono lineas"
+                app:startIconDrawable="@drawable/ic_drink">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/m_et_bebida"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_postre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/carter_one"
+                    android:text="Ingirio Postre?"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_postre_si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rb_postre_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No" />
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_postre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Ingrese el postre"
+                android:visibility="gone"
+                app:startIconContentDescription="Icono lineas"
+                app:startIconDrawable="@drawable/ic_postre">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/m_et_postre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_tentacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/carter_one"
+                    android:text="Tentacion de otro alimento?"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_tentacion_si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rb_tentacion_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No" />
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_tentacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Ingrese la tentacion"
+                android:visibility="gone"
+                app:startIconContentDescription="Icono lineas"
+                app:startIconDrawable="@drawable/ic_tentacion">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/m_et_tentacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_satisfecho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rg_satisfecho_si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/carter_one"
+                    android:text="Se quedo con hambre?"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_satisfecho_si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rb_satisfecho_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/m_btn_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:text="Guardar" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

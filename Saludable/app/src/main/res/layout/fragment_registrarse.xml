@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.registrarse_frg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/registro_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/carter_one"
+            android:text="Registrarse"
+            android:textAlignment="center"
+            android:textColor="@color/verde_3"
+            android:textSize="35dp" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="DNI"
+            app:startIconContentDescription="Icono lineas"
+            app:startIconDrawable="@drawable/ic_dni"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registro_et_dni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            app:startIconContentDescription="Icono persona"
+            app:startIconDrawable="@drawable/ic_add_person"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registro_et_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+            app:startIconContentDescription="Icono persona"
+            app:startIconDrawable="@drawable/ic_add_person"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registro_et_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <RadioGroup
+            android:id="@+id/rg_sexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/registro_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/carter_one"
+                android:text="Genero"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rb_masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:checked="true"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/rb_femenino"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Femenino" />
+
+            <RadioButton
+                android:id="@+id/rb_otro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Otro" />
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha Nacimiento"
+            app:helperText="Obligatorio , AÑO/MES/DIA ej (2000/12/28)"
+            app:helperTextEnabled="true"
+            app:startIconContentDescription="Icono calendario"
+            app:startIconDrawable="@drawable/ic_fecha"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registro_fecha_nac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="date" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Localidad"
+            app:startIconContentDescription="Icono mapa"
+            app:startIconDrawable="@drawable/ic_direccion">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registro_et_localidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Usuario"
+            app:startIconContentDescription="Icono lineas"
+            app:startIconDrawable="@drawable/ic_usuario">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_et_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Contraseña"
+            app:endIconMode="password_toggle"
+            app:startIconContentDescription="Icono lineas"
+            app:startIconDrawable="@drawable/ic_pass">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_et_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/registro_info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/carter_one"
+            android:text="Tipo de tratamiento"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_tratamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_anorexia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anorexia" />
+
+            <RadioButton
+                android:id="@+id/rb_bulimia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bulimia" />
+
+            <RadioButton
+                android:id="@+id/rb_obesidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Obesidad" />
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/registro_btn_registrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp"
+            android:text="Registrarse" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

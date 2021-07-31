@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "267569139409",
+    "project_id": "saludable-app-81bc3",
+    "storage_bucket": "saludable-app-81bc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267569139409:android:c1440560c34deffb3a3ff0",
+        "android_client_info": {
+          "package_name": "com.saludable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267569139409-og9mvk4en7o33c6174ppgeqhktpua0h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaPUDEhhmdMwEF0jXuBUPGpNSkYjfIxS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267569139409-og9mvk4en7o33c6174ppgeqhktpua0h5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
