@@ -13,7 +13,7 @@ Aplicación para llevar control de las comidas de Pacientes
               Ademas , pueden agendar sus comidas y una vez que vuelvan a tener internet se sincronizaran
 			        con la base de datos.<br>
 	            En esta aplicacion , tuve la inclinacion de usar mucho las visibilidades "VISIBLE" Y "GONE" , para hacer aparecer y desaparecer partes de la app <br>
-              <H2>Enunciado</h2>
+              <H2>Descripcion</h2>
               “Saludable” es una organización que se dedica a la realización de tratamientos<br>
               para personas con desordenes alimenticios.<br>
               Según el relevamiento realizado a Magali (Dueña de la organización) el<br>
